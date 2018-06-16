@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		<script>
+			function armazenarRespostas(){
+                for( numQ=0; numQ < 3; numQ++){
+                    questao = document.getElementsByName("questao"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked == true){
+                            localStorage.setItem("rotulo"+numQ, "resposta "+ (I+1))
+                            break
+                            }
+                        }
+                        window.open("quest02.html","_self")
+                    }
+                }
+	</script>
+</head>
+<body>
+	<form>
+		<div class="col-12">
+			<h3>Questão 01 - Tipo 1</h3>
+			<p>O que é um Sistema Operacional?</p>
+		</div>
+		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 1</label></div>
+		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 2</label></div>
+		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 3</label></div>
+		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 4</label></div>
+
+
+		<input type="button" value="CONFERIR" onclick="armazenarRespostas()">
+
+
+	</form>	
+</body>
+</html>
