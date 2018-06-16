@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 72, 153, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background-color: #dddddd;
+    box-shadow: 0 0 20px #3678e2;
+    border-radius: 4px;
+    margin: auto;
+}
+
+@media (min-width: 300px) {
+    .container {
+        height: 350px;
+        width: 250px;
+        margin-top: 15%;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .container {
+        height: 500px;
+        width: 400px;
+        margin-top: 10%;
+    }
+}
+
+.form-container {
+    color: #164899;
+    text-align: center;
+}
+
