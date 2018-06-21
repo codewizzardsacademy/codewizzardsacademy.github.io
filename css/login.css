@@ -17,10 +17,15 @@ body {
 
 @media (min-width: 300px) {
     .container {
-        height: 350px;
-        width: 250px;
+        height: 400px;
+        width: 275px;
         margin-top: 15%;
     }
+
+    .button-group {
+        margin: 15% auto;
+    }
+
 }
 
 
@@ -30,6 +35,11 @@ body {
         width: 400px;
         margin-top: 10%;
     }
+
+    .button-group {
+        margin: 25% auto;
+    }
+
 }
 
 .form-container {
@@ -37,3 +47,51 @@ body {
     text-align: center;
 }
 
+input {
+    border: none;
+    background-color: #dddddd;
+    border-bottom: 2px solid #3678e2;
+}
+
+input:focus ~ .floating-label{
+    font-size: 12px;
+    opacity: 1;
+    transform: translate(-80px, -45px);
+}
+
+.inputText {
+    font-size: 14px;
+    width: 200px;
+    height: 25px;
+}
+
+.floating-label {
+    /*position: absolute;*/
+    pointer-events: none;
+    /*left: 20px;*/
+    /*top: 18px;*/
+    transition: 0.5s ease all;
+    transform: translate(-80px, -25px);
+}
+
+.block {
+    display: block;
+}
+
+.form-group-button {
+    width: 60%;
+    height: 40px;
+    border: none;
+    background-color: #164899;
+    color: #dddddd;
+    border-radius: 4px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #164899;
+}
+
+.input-group {
+    margin: 6% auto;
+}

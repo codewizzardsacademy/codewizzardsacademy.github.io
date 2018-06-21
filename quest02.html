@@ -3,14 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Passo 1</title>
-    <script>
-        for( I = 0; I < 3; I++){
-            respQuest = localStorage.getItem("rotulo"+(I+1))
-            document.write(respQuest+ "<br>")
-        }
-    </script>
+    
 </head>
 <body>
+	<div id="resultado"></div>
 
+	<script>
+
+    	var gabarito = [1,2,3,4,1]
+    	var respostas = []
+    	var acertos = 0
+
+        for( I = 0; I < gabarito.length; I++){
+            respostas[I] = localStorage.getItem("q"+(I+1))
+        }
+
+        console.log(respostas)
+
+        for (I=0; I<gabarito.length; I++){
+        	if(gabarito[I] == respostas[I]){
+        		acertos++
+        	}
+        }
+
+        var porcentagem = (acertos / gabarito.length) * 100
+
+        var resultado = document.getElementById("resultado")
+
+        var inputCertificado = document.getElementById("inputCertificado")
+
+        function setNome(e){
+        	console.log(e.target.value)
+        }
+
+        if (acertos >= 3){
+        	resultado.classList.add("passou")
+        	resultado.innerHTML = "Preencha seu nome para emitir o certificado <br>"
+        	var node = document.createElement("input")
+        	node.type = 'text'
+        	resultado.appendChild(node)
+
+        	var sub = document.createElement("input")
+        	sub.type = 'submit'
+        	sub.onclick = 'console.log("hi")'
+
+        	resultado.appendChild(sub)
+        } else {
+        	resultado.cassList("reprovou")
+        	resultado.innerHTML = "Você acertou " +porcentagem.toFixed(2)+ "%, estude mais e tente novamente!"
+        }
+    </script>
 </body>
 </html>

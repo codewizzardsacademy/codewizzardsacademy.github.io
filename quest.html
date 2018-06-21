@@ -3,36 +3,105 @@
 <head>
 		<title></title>
 		<link rel="stylesheet" href="./css/colunas.css">
-		<script>
-			function armazenarRespostas(){
-                for( numQ=0; numQ < 3; numQ++){
-                    questao = document.getElementsByName("questao"+numQ)
-                    for( I=0; I < questao.length; I++){
-                        if(questao[I].checked == true){
-                            localStorage.setItem("rotulo"+numQ, "resposta "+ (I+1))
-                            break
-                            }
-                        }
-                        window.open("quest02.html","_self")
-                    }
-                }
-	</script>
+		
 </head>
 <body>
 	<form>
-		<div class="col-12">
-			<h3>Questão 01 - Tipo 1</h3>
-			<p>O que é um Sistema Operacional?</p>
+		<div class="col-3 red">
+			<h3>Atividades</h3>
+
+			<ul>
+				<li><a href="#">Inglês Instrumental</a></li>
+			</ul>
+
+			<h3>Aulas</h3>
+
+			<ul>
+				<li>Inglês Instrumental</li>
+			</ul>
+
+			<h3>Materiais de apoio</h3>
+
+			<ul>
+				<li>Inglês Instrumental</li>
+			</ul>
+
+			
 		</div>
-		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 1</label></div>
-		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 2</label></div>
-		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 3</label></div>
-		<div class="col-12"><label><input type="radio" name="questao1">Alternativa 4</label></div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 aqua">
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-		<input type="button" value="CONFERIR" onclick="armazenarRespostas()">
 
 
-	</form>	
+			<label class="container">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		<input type="button" value="CONFERIR" onClick="armazenarRespostas()">
+		<input type="reset" value="Limpar">
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+				
+	           
+				var qntQuestoes = 5
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q"+numQ, I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("quest02.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
 </body>
 </html>
