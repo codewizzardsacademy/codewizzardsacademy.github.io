@@ -85,14 +85,20 @@ body {
     .container {
         width: 750px;
     }
-
     .miniatura {
-        width: 95%;
+        width: 99%;
         height: 100%;
         margin: 0.5% 0.5%;
     }
     article {        
-        height: 550px;
+        height: 450px;
+    }
+    footer {
+        height: 65px;
+    }
+    .slideShow {
+        display: none;
+        overflow: hidden;
     }
 }
 
@@ -153,14 +159,20 @@ body {
     .container {
         width: 750px;
     }
-
     .miniatura {
         width: 95%;
         height: 100%;
         margin: 0.5% 0.5%;
     }
     article {        
-        height: 550px;
+        height: 450px;
+    }    
+    footer {
+        height: 45px;
+    }
+    .slideShow {
+        display: none;
+        overflow: hidden;
     }
 }
 
@@ -235,6 +247,13 @@ body {
     article {        
         height: 250px;
     }
+    footer {
+        height: 25px;
+    }
+    .slideShow {
+        display: block;
+        overflow: hidden;
+    }
 }
 
 @media (min-width:1200px) {
@@ -305,10 +324,16 @@ body {
     }
     .miniatura:nth-child(2) {
         float: left;
-    }
-    
+    }    
     article {        
         height: 250px;
+    }
+    footer {
+        height: 25px;
+    }
+    .slideShow {
+        display: block;
+        overflow: hidden;
     }
 }
 
@@ -436,6 +461,10 @@ p {
     background-color: rgba(250, 250, 250, 1);
 }
 
+.maxContainer {
+    max-width: 100%;
+}
+
 .menu {
     list-style: none;
 }
@@ -447,7 +476,7 @@ p {
 .menu li,
 .logIn li {
     display: inline-flex;
-    padding: 6px 10px;
+    padding: 6px 15px;
 }
 
 .menu li a {
@@ -465,6 +494,7 @@ p {
 
 main {
     width: 100%;
+    max-width: 1350px;;
     margin-right: auto;
     margin-left: auto;
     padding: 0.5% 0%;
@@ -477,10 +507,9 @@ main {
 }
 
 .slideShow {
-    overflow: hidden;
     border: 0.5px solid rgba(220, 220, 220, 1);
     border-radius: 8px;
-    width: 1150px;
+    width: 100%;
     height: 220px;
     margin: 0 auto;
 }
@@ -494,8 +523,6 @@ main {
     float: left;
     height: 220px;
     width: 1150px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
     cursor: pointer;
 }
 
@@ -569,20 +596,22 @@ article {
 }
 
 footer {
-    height: 80px;
     margin-top: 25px;
+    padding-top: 5px;
     border-top: 1px solid lightgray;
     border-bottom: 5px solid rgba(22, 72, 153, 1);
     text-align: center;
     vertical-align: middle;
+    width: 100%;
 }
 
-footer h4 {    
+footer h4, footer span, footer a{
+    display: inline;
+    text-decoration: none !important;
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #686f7a;
     line-height: 18px;
     font-size: 13px;
     font-weight: 100 !important;
     letter-spacing: 1px;
-    padding: 0px;
 }
