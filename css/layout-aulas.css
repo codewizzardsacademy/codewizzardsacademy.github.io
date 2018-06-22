@@ -1,6 +1,3 @@
-[class^="col-"] {
-}
-
 @font-face {
     font-family: WorkSansRegular;
     src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
@@ -16,23 +13,33 @@
     src: url("../fonts/Work_Sans/WorkSans-SemiBold.ttf");
 }
 
-.container {
-    height: 100%;
-    
+.botao {
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(../icons/baseline_arrow_forward_white_18dp.png);
+    background-repeat: no-repeat;
+    background-position: 3px;
+    text-decoration: none;
+    padding: 7px 7px 7px 25px;
+    background-color: rgba(22, 72, 153, 1);
 }
 
-/*
-.pos-video {
-    margin: 20px;
-    border: 1px solid black;
+.quest {
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(../icons/baseline_create_white_18dp.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-decoration: none;
+    padding: 7px 7px 7px 25px;
+    background-color: rgba(22, 72, 153, 1);
 }
-*/
 
 body {
     font-family: WorkSansRegular;
 }
+
 nav {
-    
     float: left;
 }
 
@@ -45,18 +52,18 @@ ul {
 }
 
 li {
-   
-    border: 1px solid white;
+    border-bottom: 1px solid white;
     display: block;
     list-style: none;
 }
+
 nav ul li p {
     font-size: 18px;
     text-align: center;
     padding: 10px;
 }
 
-nav ul li a { 
+nav ul li a {
     font-size: 13px;
     background-image: url(../icons/baseline_reorder_black_18dp.png);
     background-repeat: no-repeat;
@@ -75,7 +82,9 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 34px; 
+    padding: 7px;
+    color: rgba(22, 72, 153, 1);
+    font-size: 34px;
 }
 
 h2 {
@@ -85,9 +94,9 @@ h2 {
 section {
     text-align: center;
     margin-left: 16%;
-    padding-top: 20px
-
+    padding-top: 10px
 }
+
 article {
     position: flex;
     padding: 10px;
@@ -102,13 +111,15 @@ footer {
     vertical-align: middle;
     width: 84%;
     margin-left: 16%;
-    bottom: 0;    
+    bottom: 0;
 }
 
-footer h4, footer span, footer a{
+footer h4,
+footer span,
+footer a {
     display: inline;
     text-decoration: none !important;
-    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #686f7a;
     line-height: 18px;
     font-size: 13px;
@@ -122,4 +133,3 @@ footer h4, footer span, footer a{
     height: auto;
     padding: 1% 1%;
 }
-
