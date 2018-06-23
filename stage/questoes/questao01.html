@@ -7,32 +7,19 @@
 </head>
 <body>
 	<form>
-		<div class="col-3 red">
-			<h3>Atividades</h3>
-
-			<ul>
-				<li><a href="#">Inglês Instrumental</a></li>
-			</ul>
-
-			<h3>Aulas</h3>
-
-			<ul>
-				<li>Inglês Instrumental</li>
-			</ul>
-
-			<h3>Materiais de apoio</h3>
-
-			<ul>
-				<li>Inglês Instrumental</li>
-			</ul>
+		<div class="col-3">
+			<br>
 
 			
 		</div>
 		<div class="col-1"><br></div>
 
-		<div class="col-6 aqua">
+		<div class="col-6 questao">
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+			<h3></h3>
+
+			<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -59,8 +46,8 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input type="button" value="CONFERIR" onClick="armazenarRespostas()">
-			<input type="reset" value="Limpar">
+			<input class="botao" type="button" value="Questão 02" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
 
 
 
@@ -89,14 +76,14 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q"+numQ, I+1)
+                            localStorage.setItem("q1", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("quest02.html","_self")
+					window.open("questao02.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")
