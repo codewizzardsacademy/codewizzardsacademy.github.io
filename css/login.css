@@ -53,7 +53,8 @@ input {
     border-bottom: 2px solid #3678e2;
 }
 
-input:focus ~ .floating-label{
+input:focus ~ .floating-label,
+input:valid ~.floating-label{
     font-size: 12px;
     opacity: 1;
     transform: translate(-80px, -45px);
@@ -85,6 +86,7 @@ input:focus ~ .floating-label{
     background-color: #164899;
     color: #dddddd;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 a:link, a:visited {

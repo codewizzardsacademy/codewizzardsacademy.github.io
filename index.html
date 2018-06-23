@@ -66,9 +66,7 @@
                                         <div class="col-mb-12 col-sm-12 col-md-6 col-lg-6">
                                             <div class="col-mb-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="miniatura">
-                                                    <a href="video-aulas/fw1-aula01.html">
-                                                        <img src="img/web_design1.png"/>
-                                                    </a>    
+                                                    <img src="img/web_design1.png"/>
                                                 </div>                                  
                                             </div>     
                                             <div class="col-mb-12 col-sm-6 col-md-6 col-lg-6">
@@ -80,9 +78,7 @@
                                         <div class="col-mb-12 col-sm-12 col-md-6 col-lg-6">
                                             <div class="col-mb-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="miniatura">
-                                                    <a href="video-aulas/fw1-aula02.html">
-                                                        <img src="img/web_design2.png"/>
-                                                    </a>
+                                                    <img src="img/web_design2.png"/>
                                                 </div>                                  
                                             </div>     
                                             <div class="col-mb-12 col-sm-6 col-md-6 col-lg-6">
@@ -232,6 +228,23 @@
                 </div>
             </div>
     </footer>
+
+    <script>
+        var buttons = document.getElementsByClassName("miniatura")
+        
+        for(i = 0; i < buttons.length; i++){
+            buttons[i].addEventListener('click', function(){
+            var isLoged = localStorage.getItem("isLoged")
+            if(isLoged){
+                window.open("./video-aulas/fw1-aula01.html", "_self")
+            } else {
+                window.open("./login.html", "_self")
+            }
+        })
+        }
+        
+        
+    </script>
 </body>
 
 </html>
