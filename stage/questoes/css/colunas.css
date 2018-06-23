@@ -37,6 +37,7 @@ a {
 }
 
 .botao {
+    margin-top: 20px;
     color: white;
     border-radius: 10px 10px 10px 10px;
     text-decoration: none;
@@ -57,6 +58,7 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color
 }
 
 .container input {
@@ -71,8 +73,9 @@ a {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+
     border-radius: 50%;
+    background-color: #bfbfbf;
 }
 
 
@@ -81,7 +84,7 @@ a {
 }
 
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #164899;
 }
 
 .checkmark:after {
