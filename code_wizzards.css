@@ -444,7 +444,7 @@ body {
         height: 150px;
     }
     main{        
-        display: table;
+        display: block;
         content: "";
         clear: both;
     }
