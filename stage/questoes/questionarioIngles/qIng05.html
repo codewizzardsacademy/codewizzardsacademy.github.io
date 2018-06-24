@@ -7,35 +7,34 @@
 </head>
 <body>
 	<form>
-		<div class="col-3">
+		<div class="col-3 red">
 			<br>
-
-			
 		</div>
 		<div class="col-1"><br></div>
 
 		<div class="col-6 questao">
 
-			<p>	Qual das seguintes formas, é a forma completa da frase “She’s a good volleyball player”</p>
+			<p>Qual verbo to be completa a frase “They ___ very good playing music”.</p>
 
 
 
 
 			<label class="container">
-				She are a good volleyball player.
+				Am
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				Is she a good volleyball player?
+				Are
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				She isn’t a good volleyball player.
+				Is
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				She is a good volleyball player.
+				Cam
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input class="botao" type="button" value="Questão 05" onClick="armazenarRespostas()">
-			<input class="botao" type="reset" value="Limpar">
+			<input 	class="botao" 	type="button" value="Próximo questionário" onClick="armazenarRespostas()">
+			<input 	class="botao" 	type="button" value="Próxima aula" onClick="proximaAula()">
+			<input 	class="botao" 	type="reset" value="Limpar">
 
 
 
@@ -53,7 +52,9 @@
 
 	<script>
 			
-
+			function proximaAula(){
+				window.open("https://www.google.com", "_self")
+			}
 			function armazenarRespostas(){
 				
 	           
@@ -64,19 +65,19 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q4", I+1)
+                            localStorage.setItem("q5", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("questao05.html","_self")
+					window.open("qIng06.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")
                 }
             }
-		</script>	
+	</script>
 </body>
 </html>

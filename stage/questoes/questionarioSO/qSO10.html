@@ -7,30 +7,27 @@
 </head>
 <body>
 	<form>
-		<div class="col-3 red">
+		<div class="col-3">
 			<br>
+
+			
 		</div>
 		<div class="col-1"><br></div>
 
 		<div class="col-6 questao">
-
-			<p>Qual das seguintes formas, é a forma contraída da frase “I am with you”</p>
-
-
-
-
+			<p>Qual desses exemplos os sistemas embarcados são utilizados?</p>
 			<label class="container">
-				I’m with you.
+				Computadores Pessoais.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				Am I with you?
+				Celulares.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				I’m not with you.
+				Servidores.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input 	class="botao" 	type="button" value="Questão 04" onClick="armazenarRespostas()">
-			<input 	class="botao" 	type="reset" value="Limpar">
+			<input class="botao" type="button" value="CONFERIR" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
 
 
 
@@ -50,8 +47,8 @@
 			
 
 			function armazenarRespostas(){
-				
-	           
+			
+	        
 				var qntQuestoes = 1
 				var respondidas = 0
                 for( numQ=1; numQ <= qntQuestoes; numQ++){
@@ -59,14 +56,14 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q2", I+1)
+                            localStorage.setItem("q10", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("questao04.html","_self")
+					window.open("resultadoSO.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")

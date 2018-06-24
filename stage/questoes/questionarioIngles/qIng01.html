@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+
+			<p>	Qual das seguintes frases não está conjugada com o verbo to be:</p>
+
+
+
+
+			<label class="container">
+				I’m smarter than you.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				You can’t swim here.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				She is a good student.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				They aren’t good whit me.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="Questão 02" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+			
+	        
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q1", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qIng02.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>

@@ -14,25 +14,22 @@
 
 		<div class="col-6 questao">
 
-			<p>Qual verbo to be completa a frase “They ___ very good playing music”.</p>
+			<p>Qual das seguintes formas, é a forma contraída da frase “I am with you”</p>
 
 
 
 
 			<label class="container">
-				Am
+				I’m with you.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				Are
+				Am I with you?
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				Is
-			<input type="radio" name="q1"><span class="checkmark"></span></label>
-			<label class="container">
-				Cam
+				I’m not with you.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input 	class="botao" 	type="button" value="Próximo questionário" onClick="armazenarRespostas()">
+			<input 	class="botao" 	type="button" value="Questão 04" onClick="armazenarRespostas()">
 			<input 	class="botao" 	type="reset" value="Limpar">
 
 
@@ -62,14 +59,14 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q5", I+1)
+                            localStorage.setItem("q2", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("resultado.html","_self")
+					window.open("qIng04.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")

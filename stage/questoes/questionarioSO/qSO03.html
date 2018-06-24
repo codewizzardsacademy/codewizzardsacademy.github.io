@@ -7,35 +7,30 @@
 </head>
 <body>
 	<form>
-		<div class="col-3">
+		<div class="col-3 red">
 			<br>
-
-			
 		</div>
 		<div class="col-1"><br></div>
 
 		<div class="col-6 questao">
 
-			<p>	Qual das seguintes frases não está conjugada com o verbo to be:</p>
+			<p>Qual das seguintes formas, é a forma contraída da frase “I am with you”</p>
 
 
 
 
 			<label class="container">
-				I’m smarter than you.
+				Quarta fase - Computadores Pessoais.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				You can’t swim here.
+				Terceira fase - Circuitos Integrados.
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				She is a good student.
-			<input type="radio" name="q1"><span class="checkmark"></span></label>
-			<label class="container">
-				They aren’t good whit me.
+				Quinta fase - Atual
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input class="botao" type="button" value="Questão 02" onClick="armazenarRespostas()">
-			<input class="botao" type="reset" value="Limpar">
+			<input 	class="botao" 	type="button" value="Questão 04" onClick="armazenarRespostas()">
+			<input 	class="botao" 	type="reset" value="Limpar">
 
 
 
@@ -64,14 +59,14 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q1", I+1)
+                            localStorage.setItem("q2", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("questao02.html","_self")
+					window.open("qSO04.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")

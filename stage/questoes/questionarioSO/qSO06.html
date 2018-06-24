@@ -7,33 +7,32 @@
 </head>
 <body>
 	<form>
-		<div class="col-3 red">
+		<div class="col-3">
 			<br>
+
+			
 		</div>
 		<div class="col-1"><br></div>
 
 		<div class="col-6 questao">
 
-			<p>Qual das seguintes frases está conjugada com o verbo to be:</p>
-
-
-
-
+			
+			<p>Qual foi o primeiro tipo de sistema operacional criado?</p>
 			<label class="container">
-				You can drive his car easily.
+				Unix
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				I’ll be there.
+				Batch
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				It’s a good pet.
+				DOS
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 			<label class="container">
-				They are going to her house for the party.
+				Mac OS
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-			<input 	class="botao" 	type="button" value="Questão 03" onClick="armazenarRespostas()">
-			<input 	class="botao" 	type="reset" value="Limpar">
+			<input class="botao" type="button" value="Questão 07" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
 
 
 
@@ -53,8 +52,8 @@
 			
 
 			function armazenarRespostas(){
-				
-	           
+			
+	        
 				var qntQuestoes = 1
 				var respondidas = 0
                 for( numQ=1; numQ <= qntQuestoes; numQ++){
@@ -62,14 +61,14 @@
                     for( I=0; I < questao.length; I++){
                         if(questao[I].checked){
                         	respondidas++
-                            localStorage.setItem("q2", I+1)
+                            localStorage.setItem("q6", I+1)
                             break
                     	}
                 	}
 				}
                     
 				if (respondidas == qntQuestoes){
-					window.open("questao03.html","_self")
+					window.open("qSO07.html","_self")
 				} 
                 else {
                   	alert("Maque todas as questões")

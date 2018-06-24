@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3 red">
+			<br>
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+
+			<p>Qual o principal problema da fase atual dos computadores?</p>
+
+
+
+
+			<label class="container">
+				A pouca capacidade de processamento.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				A pouca compatibilidade de um SO com outros.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				A necessidade cada vez maior de informação.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			
+			<input 	class="botao" 	type="button" value="Próximo questionário" onClick="armazenarRespostas()">
+			<input 	class="botao" 	type="button" value="Próxima aula" onClick="proximaAula()">
+			<input 	class="botao" 	type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+			function proximaAula(){
+				window.open("https://www.google.com", "_self")
+			}
+			function armazenarRespostas(){
+				
+	           
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q5", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qSO06.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+	</script>
+</body>
+</html>

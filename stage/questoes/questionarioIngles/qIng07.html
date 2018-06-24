@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+			<h3>SOFTWARES</h3>
+			<br>
+			<p>Since computers can understand only two words, variously defined as yes and no, on
+				and off, or zero and one, computer scientists have devised a babel of “languages” that
+				translate human wishes into some variation of the computer’s two words. BASIC is the
+				language of most desktop personal computers, originally written for Dartmouth students in
+				the mid- 1960s; FORTRAN is an earlier attempt used mainly for scientific problems; Logo is
+				designed for children; and Ada is used mainly for military problems.
+				Ada is named in honor of Lord Byron’s science-minded daughter Ada.Countess of
+				Lovelace, whose friend and collaborator Charles Babbage was the eccentric genius of the
+				Analytical Engine. She also lives on in what is known as Lady Lovelace’s Objection, which refers
+				not to any romantic advances by Babbage but to the age-old question of whether a machine
+				can be made to think. Objected Lady Love-lace: “The Analytical Engine has no pretensions to
+				originate anything. It can do whatever we know how to order it to perform.”
+				</p>
+				<br>
+			<h4>Vocabulary</h4>
+
+			<div class="col-6 bord">			
+				<p>since: desde que, como, visto que</p>
+				<p>to devise: projetar, inventar</p>
+				<p>wish: desejo</p>
+				<p>earlier attempt: experiência anterior</p>
+			</div>
+			<div class="col-6 bord">
+					<p>mainly: principalmente</p>
+					<p>in honor of: em hornenagem a</p>
+					<p>to live on: continuar presente</p>
+					<p>engine: máquina</p>
+			</div>
+
+			<div class="row"></div>
+			<br>
+			<p>A que se refere a chamada “Objeção de Lady Lovelace”?</p>
+			<label class="container">
+				A máquina não pensa só age
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Que os computadores nunca seriam famosos
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Não se refere a quaisquer avanços românticos, mas a velha questão de saber se uma máquina pode pensar.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="Questão 08" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+			
+	        
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q7", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qIng08.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3 red">
+			<br>
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+
+			<p>Qual é a primeira fase dos sistemas operacionais?</p>
+
+
+
+
+			<label class="container">
+				Válvulas e painéis de programação.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Circuitos integrados e multiprogramação.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Transistores e sistemas em lote.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input 	class="botao" 	type="button" value="Questão 03" onClick="armazenarRespostas()">
+			<input 	class="botao" 	type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+				
+	           
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q2", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qSO03.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>
