@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Wizzards - Arquitetura e Organização de Computadores</title>
+    <link rel="stylesheet" href="../css/diagramacao.css">
+    <link rel="stylesheet" href="../css/layout-aulas.css">
+
+    <style>
+        input[type="checkbox"]:checked ~ ul{
+            display: block;
+            transform: translateY(0);
+        }
+
+        input[type="checkbox"]:checked ~ ul li {
+            background-color: #3498db;
+        }
+
+        input[type="checkbox"]:checked ~ label{
+            background-color: #3498db;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            left: -999px;
+        }
+
+
+
+        .content-box ul {
+            display: none;
+        }
+
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label-header {
+            display: block;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+   <div>
+      <div>
+        <nav class="col-3">
+            <ul>
+                <div class="side-menu">
+                        <li><h2>Cursos</h2></li>
+
+                        <li>
+                            <div class="content-box">
+                                <input type="checkbox" id="fw1" value="curso">
+                                <label class="label-header" for="fw1"><h3>Fundamentos de Web Design 1</h3></label>
+                                <ul>
+                                    <li>Video Aula 1</li>
+                                    <li>Questao 1</li>
+                                    <li>Questao 2</li>
+                                    <li>Questao 3</li>
+                                    <li>Questao 4</li>
+                                    <li>Questao 5</li>
+                                </ul>
+                            </div>
+            
+                        </li>
+                        
+                        <li>
+                            <div class="content-box">
+                                    <input type="checkbox" id="so" value="name">
+                                    <label class="label-header" for="so"><h3>Sistemas Operacionais</h3></label>
+                                    <ul>
+                                        <li>Video Aula 1</li>
+                                        <li>Questao 1</li>
+                                        <li>Questao 2</li>
+                                        <li>Questao 3</li>
+                                        <li>Questao 4</li>
+                                        <li>Questao 5</li>
+                                    </ul>
+                                </div>
+                        </li>
+                </div>
+
+                
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <section>
+            <article>
+                <div>
+                    <h1>Arquitetura e Organização de Computadores</h1>
+                    <h2>Vídeo Aula 01</h2>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/Jy3-Z09Za7k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+                    <p>Baixe <a href="">aqui</a> o material de apoio desta video aula.</p><br>
+                    <p><a href="aoc-aula02.html" class="botao">Proxima Vídeo Aula</a></p>
+                </div>
+            </article>
+        </section> 
+    </div>
+   </div>
+   <div class="col-8"></div><footer class="maxContainer">
+        <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-6">
+                    <div class="footerRights">
+                        <h4> Todos os direitos reservados. ©</h4>
+                    </div>
+                </div>
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="footerMap">
+                    <a href="#"><h4>Home</h4></a><span>|</span>
+                    <a href="#"><h4>Cursos</h4></a><span>|</span>
+                    <a href="#"><h4>Opniões</h4></a><span>|</span>
+                    <a href="#"><h4>Quem Somos</h4></a><span>|</span>
+                    <a href="#"><h4>Fale Conosco</h4></a>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

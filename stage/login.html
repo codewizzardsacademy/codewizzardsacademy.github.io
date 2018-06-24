@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>LOGIN</h2>
+
+            <div class="input-group">
+                <input type="text" class="inputText" required/>
+                <span class="floating-label block">Email</span>
+            </div>
+
+            <div class="input-group">
+                <input type="password" class="inputText" required />
+                <span class="floating-label block">Senha</span>
+            </div>
+
+
+            <div class="block button-group">
+                <button id="loginButton" class="form-group-button" type="submit">ENTRAR</button>
+            </div>
+
+            <div class="block button-group">
+                <a href="">Esqueci minha senha</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        var button = document.getElementById("loginButton")
+
+        var inputs = document.getElementsByClassName("inputText")
+        button.addEventListener('click', function(){
+            
+
+            if(inputs[0].value == "" || inputs[1].value == ""){
+                alert('Você precisa digitar usuário e senha!')
+            } else {
+                localStorage.setItem('isLoged', true)
+                window.open("./video-aulas/fw1-aula01.html","_self")
+            }
+        })
+
+    </script>
+</body>
+</html>

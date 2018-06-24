@@ -59,7 +59,8 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			<input type="radio" name="q1"><span class="checkmark"></span></label>
 
-
+			<input type="button" value="CONFERIR" onClick="armazenarRespostas()">
+			<input type="reset" value="Limpar">
 
 
 
@@ -70,8 +71,7 @@
 		<br>
 		<div class="col-12">
 			
-		<input type="button" value="CONFERIR" onClick="armazenarRespostas()">
-		<input type="reset" value="Limpar">
+		
 
 
 	</form>
@@ -82,7 +82,7 @@
 			function armazenarRespostas(){
 				
 	           
-				var qntQuestoes = 5
+				var qntQuestoes = 1
 				var respondidas = 0
                 for( numQ=1; numQ <= qntQuestoes; numQ++){
                     var questao = document.getElementsByName("q"+numQ)
