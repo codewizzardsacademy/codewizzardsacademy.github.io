@@ -3,11 +3,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .linha {
     display: table;
     content: "";
     clear: both;
+/*    border: 1px solid black;*/
 }
+
+[class^="col-"]{
+    float: left;
+    border: 1px solid black;
+}
+
 .col-1 {
     width: 8.33333333%;
 }

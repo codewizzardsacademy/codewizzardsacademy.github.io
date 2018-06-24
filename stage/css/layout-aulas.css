@@ -13,6 +13,20 @@
     src: url("../fonts/Work_Sans/WorkSans-SemiBold.ttf");
 }
 
+.sair {
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: none;
+    padding: 7px 7px 7px 7px;
+    background-color: rgba(22, 72, 153, 1);
+}
+
+.descricao {
+    background-image: url(../icons/linha.png);
+    background-repeat: no-repeat;
+    background-position: ;
+}
+
 .botao {
     color: white;
     border-radius: 10px 10px 10px 10px;
@@ -35,56 +49,135 @@
     background-color: rgba(22, 72, 153, 1);
 }
 
-body {
-    font-family: WorkSansRegular;
+
+
+
+/*Configuração do menu lateral*/
+
+input[type="checkbox"]:checked ~ ul {
+    color: white;
+    display: block;
+    transform: translateY(0);
+}
+
+input[type="checkbox"]:checked ~ ul li {
+    color: white;
+    background-color: rgba(22, 72, 153, 1);
+}
+
+input[type="checkbox"]:checked ~ label {
+    background-image: url(../icons/baseline_reorder_white_18dp.png);
+    color: white;
+    background-color: rgba(22, 72, 153, 1);
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -999px;
+}
+
+
+.content-box ul {
+    display: none;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-header {
+    display: block;
+}
+
+.full {
+/*    height: 665px;*/
+    background-color: lightgray;
 }
 
 nav {
-    float: left;
-    position: fixed;
-    height: 100%;
+    position:fixed;
     background-color: lightgray;
+    height: 100%;
 }
 
 ul {
     width: 100%;
-    
-    
-    
     overflow: auto;
 }
 
-li {
-    border-bottom: 1px solid white;
-    display: block;
-    list-style: none;
-}
 
 nav ul li p {
     font-size: 18px;
     text-align: center;
     padding: 10px;
+    border-bottom: 1px solid white;
 }
 
-nav ul li a {
-    font-size: 13px;
-    background-image: url(../icons/baseline_reorder_black_18dp.png);
+nav ul li label,
+nav ul li ul li label,
+nav ul li ul li ul li {
+    border-bottom: 1px solid white;
     background-repeat: no-repeat;
-    background-position: 15px;
-    padding: 15px 0px 15px 40px;
     display: block;
     text-decoration: none;
-    color: black;
     transition: 0.5s;
 }
 
-nav ul li a:hover {
+nav ul li label {
+    font-size: 13px;
+    background-image: url(../icons/baseline_reorder_black_18dp.png);
+    color: black;
+    padding: 15px 0px 15px 40px;
+    background-position: 15px;
+}
+
+nav ul li ul li label {
+    font-size: 12px;
+    background-image: url(../icons/baseline_reorder_white_18dp.png);
+    color: white;
+    padding: 5px 0px 15px 60px;
+    background-position: 36px 7px;
+}
+
+nav ul li ul li ul li {
+    font-size: 11px;
+    background-image: url(../icons/baseline_arrow_forward_white_18dp.png);
+    background-position: 61px;
+    padding: 15px 0px 15px 80px;
+
+}
+
+nav ul li ul li ul li a, nav ul li ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li label:hover {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
     background-color: rgba(22, 72, 153, 1);
     color: white;
 }
 
+
+
+/*Configuração do section*/
+
+.shadow {
+/*    box-shadow: 1px 1px 10px 1px #cccccc;*/
+    text-align: left;
+}
+
+body {
+    height: 100%;
+    font-family: WorkSansRegular;
+}
+
 h1 {
+    border-radius: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 0px;
     padding: 7px;
     color: rgba(22, 72, 153, 1);
     font-size: 34px;
@@ -95,14 +188,15 @@ h2 {
 }
 
 section {
-    text-align: center;
-    margin-left: 16%;
     padding-top: 10px
 }
 
+.centralizar {
+    text-align: center;
+    padding: 5px;
+}
 article {
     position: flex;
-    padding: 10px;
 }
 
 footer {
