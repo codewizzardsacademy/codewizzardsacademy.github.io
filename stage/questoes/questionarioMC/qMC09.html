@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Questao 09</title>
+		<link rel="stylesheet" href="../css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+			<p>Quais das opções não descreve tipos de revisões bibliográficas?</p>
+			<label class="container">
+				Livros
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Artigos Curtos
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Gibis informativos
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Artigos de periódicos
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="Questão 10" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+			
+	        
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q9", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qMC10.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>

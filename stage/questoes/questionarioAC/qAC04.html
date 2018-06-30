@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Questao 04</title>
+		<link rel="stylesheet" href="../css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+
+			<p>Quantas linhas e colunas, respectivamente, há na imagem abaixo?</p>
+
+			<img src="../imagens/FWQ4.png">
+
+
+
+			<label class="container">
+				3 , 4
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				2 , 4
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				4 , 3
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				3 , 3
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="Questão 05" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+				
+	           
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q4", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qFW05.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>
