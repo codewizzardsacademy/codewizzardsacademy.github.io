@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Questao 10</title>
+		<link rel="stylesheet" href="../css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+			<p>Qual das opções abaixo descreve as anotações importantes citadas na aula?</p>
+
+
+
+
+			<label class="container">
+				Conceitos-chave e ideias novas
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Anotações pessoais
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Nomes de parentes
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Nomes de outros autores
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="CONFERIR" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+			
+	        
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q10", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("resultadoMC.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>
