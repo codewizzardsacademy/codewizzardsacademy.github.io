@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" href="./css/colunas.css">
+		
+</head>
+<body>
+	<form>
+		<div class="col-3">
+			<br>
+
+			
+		</div>
+		<div class="col-1"><br></div>
+
+		<div class="col-6 questao">
+			
+			<p>Qual a diferença dos códigos for (int i = 0; i < 100; i++) e (for int k = 1; k <= 100; k++) ?</p>
+
+
+
+			<label class="container">
+				Nenhuma, os dois fazem a mesma coisa;
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				O laço que utiliza a variável k possui menos código;
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Um itera de 0 até 100 e o outro de 0 até 99;
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+			<label class="container">
+				Com o laço que utiliza a variável k, é possível utilizar seu valor como a posição.
+			<input type="radio" name="q1"><span class="checkmark"></span></label>
+
+			<input class="botao" type="button" value="Questão 08" onClick="armazenarRespostas()">
+			<input class="botao" type="reset" value="Limpar">
+
+
+
+
+		</div>
+		<div class="col-2"></div>
+		
+		<br>
+		<div class="col-12">
+			
+		
+
+
+	</form>
+
+	<script>
+			
+
+			function armazenarRespostas(){
+			
+	        
+				var qntQuestoes = 1
+				var respondidas = 0
+                for( numQ=1; numQ <= qntQuestoes; numQ++){
+                    var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                        	respondidas++
+                            localStorage.setItem("q7", I+1)
+                            break
+                    	}
+                	}
+				}
+                    
+				if (respondidas == qntQuestoes){
+					window.open("qLP08.html","_self")
+				} 
+                else {
+                  	alert("Maque todas as questões")
+                }
+            }
+		</script>	
+</body>
+</html>
