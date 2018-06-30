@@ -54,28 +54,36 @@
 
 /*Configuração do menu lateral*/
 
-input[type="checkbox"]:checked ~ ul {
+input[type="radio"]:checked ~ ul {
     color: white;
     display: block;
     transform: translateY(0);
 }
 
-input[type="checkbox"]:checked ~ ul li {
+input[type="radio"]:checked ~ ul {
     color: white;
-    background-color: rgba(22, 72, 153, 1);
+    background-color: rgba(120, 120, 120);
 }
 
-input[type="checkbox"]:checked ~ label {
+input[type="radio"]:checked ~ ul ul{
+    color: white;
+    border-left: 0px;
+}
+
+input[type="radio"]:checked ~ label {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
     color: white;
-    background-color: rgba(22, 72, 153, 1);
+    background-color: rgba(120, 120, 120);
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     position: absolute;
     left: -999px;
 }
 
+.active{
+    background-color: rgb(24, 58, 209) !important;
+}
 
 .content-box ul {
     display: none;
@@ -99,6 +107,7 @@ nav {
     position:fixed;
     background-color: lightgray;
     height: 100%;
+    width: 16.666666667%;
 }
 
 ul {
@@ -155,7 +164,7 @@ nav ul li ul li ul li a, nav ul li ul li a {
 
 nav ul li label:hover {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
-    background-color: rgba(22, 72, 153, 1);
+    background-color: rgb(119, 119, 119);
     color: white;
 }
 
