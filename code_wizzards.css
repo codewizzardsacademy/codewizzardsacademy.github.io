@@ -641,7 +641,7 @@ p {
 }
 
 .divMenu {
-    background-color: rgba(250, 250, 250, 1);
+    background-color: rgb(218,220,223)
 }
 
 .menu {
@@ -761,10 +761,10 @@ article {
 
 footer {
     margin: 10px auto;
-    padding-top: 5px;
+    padding: 10px 0px;
     vertical-align: middle;
     width: 100%;
-    border-top: 1px solid lightgray;
+    border-top: 2px solid rgb(182, 182, 182);
     border-bottom: 5px solid #365570;
 }
 
@@ -781,7 +781,7 @@ footer h4,  footer a{
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #686f7a;
     line-height: 18px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 100 !important;
     letter-spacing: 1px;
 }
