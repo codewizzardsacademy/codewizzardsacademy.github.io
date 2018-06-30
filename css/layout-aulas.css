@@ -13,44 +13,6 @@
     src: url("../fonts/Work_Sans/WorkSans-SemiBold.ttf");
 }
 
-/*Responsividade*/
-
-
-/*
-.flex-container {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.side-menu {
-    height: 100%;
-    width: 66.66%;
-}
-
-.sec {
-    justify-content: center;
-    align-items: center;
-    width: 83.33333333%;
-}
-
-.botao-sair {
-    align-self: flex-end;
-    color: white;
-    border-radius: 10px 10px 10px 10px;
-    text-decoration: none;
-    padding: 7px 7px 7px 7px;
-    background-color: rgba(22, 72, 153, 1);
-}
-
-[class^="col-"] {
-    float: left;
-    border: 1px solid black;
-}
-
-
-*/
-
 
 * {
     margin: 0px;
@@ -58,7 +20,6 @@
 }
 [class^="col-"] {
     float: left;
-/*    border: 1px solid black;*/
 }
 
 @media screen and (min-width: 0px) and (max-width: 710px) {
@@ -113,7 +74,7 @@
     }
 
     footer {
-        height: 65px;
+        height: 45px;
     }
 
 }
@@ -287,6 +248,37 @@ input[type="radio"] {
     color: white;
 }
 
+.active-2 {
+    background-image: url(../icons/baseline_arrow_forward_white_18dp.png);
+    background-color: rgb(22, 72, 153) !important;
+    color: white;
+}
+
+/*
+input[type="checkbox"]:checked ~ ul {
+    color: white;
+    display: block;
+    transform: translateY(0);
+}
+
+input[type="checkbox"]:checked ~ ul li {
+    color: white;
+    background-color: rgba(22, 72, 153, 1);
+}
+
+input[type="checkbox"]:checked ~ label {
+    background-image: url(../icons/baseline_reorder_white_18dp.png);
+    color: white;
+    background-color: rgba(22, 72, 153, 1);
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -999px;
+}
+*/
+
+
 .content-box ul {
     display: none;
 }
@@ -341,8 +333,8 @@ nav ul li ul li label {
     font-size: 12px;
     background-image: url(../icons/baseline_reorder_white_18dp.png);
     color: white;
-    padding: 5px 0px 15px 60px;
-    background-position: 36px 7px;
+    padding: 15px 0px 15px 60px;
+    background-position: 36px 13px;
 }
 
 nav ul li ul li ul li {
@@ -361,7 +353,7 @@ nav ul li ul li a {
 
 nav ul li label:hover {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
-    background-color: rgb(121, 121, 121);
+    background-color: rgba(22, 72, 153, 1);
     color: white;
 }
 
@@ -414,29 +406,37 @@ article {
 /*Cofiguração do rodapé*/
 
 footer {
-    margin-top: 25px;
+    margin: 10px auto;
     padding-top: 5px;
-    border-top: 1px solid lightgray;
-    border-bottom: 5px solid rgba(22, 72, 153, 1);
-    text-align: center;
     vertical-align: middle;
-    width: 84%;
-    margin-left: 16%;
-    bottom: 0;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 30px solid #365570;
 }
 
-footer h4,
-footer span,
-footer a {
+.footerContent {
+    max-width: 1350px;
+    margin: auto;
+    text-align: center;
+}
+
+
+footer h4,  footer a{
     display: inline;
     text-decoration: none !important;
-    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #686f7a;
     line-height: 18px;
     font-size: 13px;
     font-weight: 100 !important;
     letter-spacing: 1px;
 }
+
+/*
+footer span{
+    margin: 1120px 1%;
+}
+*/
 
 
 .mainContent {
