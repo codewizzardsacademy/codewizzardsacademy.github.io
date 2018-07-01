@@ -22,7 +22,10 @@
     float: left;
 }
 
-@media screen and (min-width: 0px) and (max-width: 710px) {
+@media screen and (min-width: 0px) {   
+    .botao-resp {
+        flex-direction: column;
+    }
     
     h1 {
         font-size: 30px;
@@ -79,7 +82,11 @@
 
 }
 
-@media screen and (min-width: 710px) and (max-width: 1080px) {
+
+@media screen and (min-width: 899px) {
+    .botao-resp {
+        flex-direction: row;
+    }
     h1 {
         font-size: 27px;
     }
@@ -132,6 +139,9 @@
 }
 
 @media (min-width:1081px) {
+     .botao-resp {
+        flex-direction: row;
+    }
     
     h1 {
         font-size: 33px;
@@ -193,16 +203,24 @@
     background-color: rgba(22, 72, 153, 1);
 }
 
+.botao-resp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 2em;
+    margin-bottom: 10px; 
+}
 
 .botao {
     color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     background-image: url(../icons/baseline_arrow_forward_white_18dp.png);
     background-repeat: no-repeat;
     background-position: 3px;
     text-decoration: none;
     padding: 5px 5px 5px 25px;
     background-color: rgba(22, 72, 153, 1);
+    margin: 5px;
 }
 
 .quest {
@@ -231,7 +249,7 @@ input[type="radio"]:checked ~ ul li {
     background-color: rgb(121, 121, 121);
 }
 
-input[type="radio"]:checked ~ label {
+input[type="radio"]:checked ~ nav ul li label {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
     color: white;
     background-color: rgb(121, 121, 121);
@@ -253,30 +271,6 @@ input[type="radio"] {
     background-color: rgb(22, 72, 153) !important;
     color: white;
 }
-
-/*
-input[type="checkbox"]:checked ~ ul {
-    color: white;
-    display: block;
-    transform: translateY(0);
-}
-
-input[type="checkbox"]:checked ~ ul li {
-    color: white;
-    background-color: rgba(22, 72, 153, 1);
-}
-
-input[type="checkbox"]:checked ~ label {
-    background-image: url(../icons/baseline_reorder_white_18dp.png);
-    color: white;
-    background-color: rgba(22, 72, 153, 1);
-}
-
-input[type="checkbox"] {
-    position: absolute;
-    left: -999px;
-}
-*/
 
 
 .content-box ul {
@@ -353,7 +347,7 @@ nav ul li ul li a {
 
 nav ul li label:hover {
     background-image: url(../icons/baseline_reorder_white_18dp.png);
-    background-color: rgba(22, 72, 153, 1);
+    background-color: rgb(121, 121, 121);
     color: white;
 }
 
@@ -431,13 +425,6 @@ footer h4,  footer a{
     font-weight: 100 !important;
     letter-spacing: 1px;
 }
-
-/*
-footer span{
-    margin: 1120px 1%;
-}
-*/
-
 
 .mainContent {
     width: 85%;
