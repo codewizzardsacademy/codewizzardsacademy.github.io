@@ -28,9 +28,8 @@ a {
 .row{
 	clear: both;
 }
-.red{background-color: red}
-.blue{background-color: blue}
-.aqua{background-color: aqua}
+
+
 .container {
     display: block;
     position: relative;
@@ -87,4 +86,10 @@ a {
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+.questao{
+    display: flex;
+    justify-content: initial;
+    align-items: flex-start;
 }

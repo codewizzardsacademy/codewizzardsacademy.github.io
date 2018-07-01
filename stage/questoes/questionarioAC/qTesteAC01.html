@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Wizzards - Arquitetura e Organização de Computadores</title>
+    <link rel="stylesheet" href="../css/diagramacao.css">
+    <link rel="stylesheet" href="../css/layout-aulas.css">
+    <link rel="stylesheet" href="../css/colunas.css">
+
+</head>
+
+<body>
+    <div class="linha col-12">
+        <div class="col-2">
+           <div class="full">
+            <nav>
+               <div class="">
+                <ul>
+                    <li>
+                        <p>Cursos</p>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="cursos" id="fw1" value="curso">
+                            <label class="label-header" for="fw1">Fundamentos de Web...</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="fw1" id="fw1-01" value="">
+                                    <label class="label-header" for="fw1-01">Vídeo Aula 1</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fw1" id="fw1-02" value="">
+                                    <label class="label-header" for="fw1-02">Vídeo Aula 2</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="cursos" id="so" value="name">
+                            <label class="label-header" for="so">Sistemas Operacionais</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="so" id="so-01" value="">
+                                    <label class="label-header" for="so-01">Vídeo Aula 1</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="so" id="so-02" value="">
+                                    <label class="label-header" for="so-02">Vídeo Aula 2</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="cursos" id="lp" value="curso">
+                            <label class="label-header" for="lp">Lógica de Programação</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="lp" id="lp-01" value="">
+                                    <label class="label-header" for="lp-01">Vídeo Aula 1</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="lp" id="lp-02" value="">
+                                    <label class="label-header" for="lp-02">Vídeo Aula 2</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="cursos" id="aoc" value="curso" checked>
+                            <label class="label-header active" for="aoc">Arquitetura e Organiza...</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="aoc" id="aoc-01"  value="" checked>
+                                    <label class="label-header active " for="aoc-01"><a href="" >Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li class="active">Questionário</li>
+                                        <li class="active">Materiais</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="aoc" id="aoc-02" value="">
+                                    <label class="label-header" for="aoc-02"><a href="">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="cursos" id="mc" value="curso">
+                            <label class="label-header" for="mc">Metodologia Científica</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="mc" id="mc-01" value="">
+                                    <label class="label-header" for="mc-01">Vídeo Aula 1</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="mc" id="mc-02" value="">
+                                    <label class="label-header" for="mc-02">Vídeo Aula 2</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                        <input type="radio" name="cursos" group id="ii" value="curso">
+                            <label class="label-header" for="ii">Inglês Instrumental</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="ii" group id="ii-01" value="">
+                                    <label class="label-header" for="ii-01">Vídeo Aula 1</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="ii" name="cursos" id="ii-02" value="">
+                                    <label class="label-header" for="ii-02">Vídeo Aula 2</label>
+                                    <ul>
+                                        <li class="item">Questionário</li>
+                                        <li class="item">Materiais</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                   
+                   
+               </div>
+            </nav>               
+            <span style="width:1px">&nbsp;</span>
+           </div>
+        </div>
+
+        <div class="col-10">
+            <div class="col-12">
+                <section>
+                    <article>
+                        <div class="linha col-12">
+                            <div class="col-11"><br></div>
+                            <div class="col-1">
+                                <p><a href="" class="sair">Sair</a></p>
+                            </div>
+                        </div>
+                        <div class="linha col-12">
+                        <div class="col-2">
+                        <br>
+
+                            
+                        </div>
+                        <div class="col-1"><br></div>
+
+                        <div class="col-6 questao">
+                            <form>
+                            <h2>Questão 1</h2>
+
+                            <p>Assinale a opção que representa respectivamente uma porta lógica OU (OR) e uma porta lógica E (AND)</p>
+
+
+
+
+                            <label class="container">
+                                <img src="../imagens/ACQ1-1.png" width="100%">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ1-2.png" width="100%">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ1-3.png" width="100%">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ1-4.png" width="100%">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+
+                            <input class="botao" type="button" value="Questão 02" onClick="armazenarRespostas()">
+                            <input class="botao" type="reset" value="Limpar">
+
+
+
+
+                        </div>
+                        <div class="col-2"></div>
+                        
+                        <br>
+                        <div class="col-12">
+                        </form>
+                    </article>
+                </section>
+            </div>
+
+        </div>
+    </div>
+   <footer class="maxContainer">
+            <div class="row">
+                    <div class="col-2"><br></div>
+                    <div class="col-sm-12 col-md-4 col-lg-6">
+                        <div class="footerRights">
+                            <h4> Todos os direitos reservados. ©</h4>
+                        </div>
+                    </div>
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="footerMap">
+                        <a href="#"><h4>Home</h4></a><span>|</span>
+                        <a href="#"><h4>Cursos</h4></a><span>|</span>
+                        <a href="#"><h4>Opniões</h4></a><span>|</span>
+                        <a href="#"><h4>Quem Somos</h4></a><span>|</span>
+                        <a href="#"><h4>Fale Conosco</h4></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

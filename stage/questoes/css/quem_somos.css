@@ -1,0 +1,81 @@
+h1 {
+    font-size: 30px !important;
+    padding-left: 18px;
+}
+
+.section{
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.personImg {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.personImg  img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.perfis {
+    height: 50px;
+    width: auto;
+    display: flex;
+    padding: 0px 10px 0px 0px;
+}
+
+.icon {
+    height: 80%;
+    margin: 5px 10px;
+    width: 80%;
+}
+
+.icon:hover{
+    background-color: #365570;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon img {
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
+
+.facebook {
+    max-height: 30px;
+    margin-top: 20%;
+}
+
+.twitter {
+    max-height: 25px;
+    margin-top: 25%;
+}
+
+.linkedin {    
+    max-height: 30px;
+    margin-top: 20%;
+}
+
+.gmail {
+    max-height: 25px;
+    margin-top: 30%;
+}
+
+.pnome {
+    font-size: 15px;
+    text-align: center;
+}
+
+.perfil {
+    text-align: justify;
+    font-size: 13px;
+    padding: 0px 15px;
+}
+
+.descricao {
+    margin-top: 15px;
+}

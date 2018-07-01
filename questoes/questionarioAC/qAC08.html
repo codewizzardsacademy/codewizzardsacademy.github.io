@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code Wizzards - Arquitetura e Organização de Computadores</title>
+    <link rel="stylesheet" href="../../css/diagramacao.css">
+    <link rel="stylesheet" href="../../css/layout-aulas.css">
+    <link rel="stylesheet" href="../../css/questoes.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0&appId=2055777504672087&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <div class="linha col-mb-12 col-md-12 col-lg-12">
+        <div class="col-mb-12 col-md-2 col-lg-2">
+            <nav>
+                <ul>
+                    <li>
+                        <p>Cursos</p>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="fw1" value="curso">
+                            <label class="label-header" for="fw1">Fundamentos de Web...</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="fw" id="fw1-01" value="">
+                                    <label class="label-header" for="fw1-01"><a href="../../video-aulas/fw1-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioFW/qFW01.html" >Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Apostila_de_exerc%C3%ADcios_-_Web_Design_I_-_Aula_1.pdf" download>Materiais</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fw" id="fw1-02" value="">
+                                    <label class="label-header" for="fw1-02"><a href="../../video-aulas/fw1-aula02.html">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioFW/qFW06.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Apostila_de_exerc%C3%ADcios_-_Web_Design_I_-_Aula_2.pdf" download>Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="so" value="name">
+                            <label class="label-header" for="so">Sistemas Operacionais</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="so" id="so-01" value="">
+                                    <label class="label-header" for="so-01"><a href="../../video-aulas/so-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioSO/qSO01.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Sistemas%20Operacionais%20I.pdf" download>Materiais</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="so" id="so-02" value="">
+                                    <label class="label-header" for="so-02"><a href="../../video-aulas/so-aula02.html">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioSO/qSO06.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Sistemas%20Operacionais%20II.pdf" download>Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="lp" value="curso">
+                            <label class="label-header" for="lp">Lógica de Programação</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="lp" id="lp-01" value="">
+                                    <label class="label-header" for="lp-01"><a href="../../video-aulas/lp-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioLP/qLP01.html">Questionário</a></li>
+                                        <li><a href="">Materiais</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="lp" id="lp-02" value="">
+                                    <label class="label-header" for="lp-02"><a href="../../video-aulas/lp-aula02.html">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioLP/qLP06.html">Questionário</a></li>
+                                        <li><a href="">Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="aoc" value="curso" checked>
+                            <label class="label-header active" for="aoc">Arquitetura e Organiza...</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="aoc" id="aoc-01" value="" checked>
+                                    <label class="label-header active" for="aoc-01"><a href="../../video-aulas/aoc-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li class="active-2"><a href="../questionarioAC/qAC01.html">Questionário</a></li>
+                                        <li class="active-2"><a href="../materiais-apoio/Arquitetura_e_Organiza%C3%A7%C3%A3o_de_Computadores_-_Video_Aula_01.pdf" download>Materiais</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="aoc" id="aoc-02" value="">
+                                    <label class="label-header" for="aoc-02"><a href="../../video-aulas/aoc-aula02.html">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioAC/qAC06.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Arquitetura_e_Organiza%C3%A7%C3%A3o_de_Computadores_-_V%C3%ADdeo_Aula_02.pdf" download>Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="mc" value="curso">
+                            <label class="label-header" for="mc">Metodologia Científica</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="mc" id="mc-01" value="">
+                                    <label class="label-header" for="mc-01"><a href="../../video-aulas/mc-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioMC/qMC01.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Metodologia_Cient%C3%ADfica_-_Aula_1.pdf" download>Materiais</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="mc" id="mc-02" value="">
+                                    <label class="label-header" for="mc-02"><a href="../../video-aulas/mc-aula02.html">Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioMC/qMC06.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Metodologia_Cient%C3%ADfica_-_Aula_2.pdf">Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content-box">
+                            <input type="radio" name="curso" id="ii" value="curso">
+                            <label class="label-header" for="ii">Inglês Instrumental</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="ii" id="ii-01" value="">
+                                    <label class="label-header" for="ii-01"><a href="../../video-aulas/ii-aula01.html">Vídeo Aula 1</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioII/qII01.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Ingl%C3%AAs%20Instrumental%20I.pdf">Materiais</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <input type="radio" name="ii" id="ii-02" value="">
+                                    <label class="label-header" for="ii-02"><a href="../../video-aulas/ii-aula02.html" download>Vídeo Aula 2</a></label>
+                                    <ul>
+                                        <li><a href="../questionarioII/qII06.html">Questionário</a></li>
+                                        <li><a href="../materiais-apoio/Ingl%C3%AAs%20Instrumental%20II.pdf" download>Materiais</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            &nbsp;
+        </div>
+
+        <div class="col-mb-12 col-md-10 col-lg-10">
+            <div class="col-mb-12 col-md-12 col-lg-12">
+                <section>
+                    <article>
+                        <div class="linha col-mb-12 col-md-12 col-lg-12">
+                            <div class="col-mb-11 col-md-11 col-lg-11"><br></div>
+                            <div class="col-mb-1 col-md-1 col-lg-1">
+                                <p><a href="" class="sair">Sair</a></p>
+                            </div>
+                        </div>
+                        <div class="linha col-mb-12 col-md-12 col-lg-12">
+                        <div class="col-mb-12 col-md-2 col-lg-2"><br></div>
+                        <form class="col-mb-12 col-md-8 col-lg-6 questao">
+
+                            <h3>Questão 08</h3>
+                            <p>Assinale a opção que se refere a tabela verdade da seguinte expressão S = A' . B</p>
+                            
+
+
+                            <label class="container">
+                                <img src="../imagens/ACQ8-1.png">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ8-2.png">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ8-3.png">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+                            <label class="container">
+                                <img src="../imagens/ACQ8-4.png">
+                            <input type="radio" name="q1"><span class="checkmark"></span></label>
+
+                            <input class="botao" type="button" value="Questão 09" onClick="armazenarRespostas()">
+                            <input class="botao" type="reset" value="Limpar">
+
+
+
+
+
+                                                   
+                        </form>
+
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="linha">
+        <div class="footerContent">
+            <div class="col-mb-12 col-md-12 col-lg-12">
+                <div class="col-mb-col-12 col-md-12 col-lg-2"><br></div>
+                <div class="col-mb-12 col-md-12 col-lg-10">
+                    <div class="col-mb-12 col-md-12 col-lg-2"><br></div>
+                    <div class="col-mb-12 col-md-12 col-lg-8">
+                        <h4> Todos os direitos reservados. ©</h4>
+                        <a href="#">
+                            <h4>Home</h4>
+                        </a><span>|</span>
+                        <a href="#">
+                            <h4>Quem Somos</h4>
+                        </a><span>|</span>
+                        <a href="fale_conosco.html">
+                            <h4>Fale Conosco</h4>
+                        </a>
+                    </div>
+                    <div class="col-mb-12 col-md-12 col-lg-2"><br></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function armazenarRespostas(){
+            var qntQuestoes = 1
+            var respondidas = 0
+            for( numQ=1; numQ <= qntQuestoes; numQ++){
+                var questao = document.getElementsByName("q"+numQ)
+                    for( I=0; I < questao.length; I++){
+                        if(questao[I].checked){
+                            respondidas++
+                            localStorage.setItem("q8", I+1)
+                            break
+                        }
+                    }
+                }
+                    
+            if (respondidas == qntQuestoes){
+                window.open("qAC09.html","_self")
+            } 
+            else {
+                alert("Maque todas as questões")
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
