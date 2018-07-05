@@ -21,6 +21,14 @@
         }(document, 'script', 'facebook-jssdk'));
 
     </script>
+    <script>
+        document.getElementById("IdDoLink").addEventListener("click", exit);
+
+        function exit() {
+            localStorage.clear()
+            window.open("../index.html","_self")
+        }
+    </script>
     <div class="linha col-mb-12 col-md-12 col-lg-12">
         <div class="col-mb-12 col-md-2 col-lg-2">
             <nav>
@@ -88,7 +96,7 @@
                                     <label class="label-header" for="lp-01"><a href="lp-aula01.html">Vídeo Aula 1</a></label>
                                     <ul>
                                         <li><a href="../questoes/questionarioLP/qLP01.html">Questionário</a></li>
-                                        <li><a href="">Materiais</a></li>
+                                        <li><a href="../materiais-apoio/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20V%C3%ADdeo%20Aula%201.pdf" download>Materiais</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -96,7 +104,7 @@
                                     <label class="label-header" for="lp-02"><a href="lp-aula02.html">Vídeo Aula 2</a></label>
                                     <ul>
                                         <li><a href="../questoes/questionarioLP/qLP06.html">Questionário</a></li>
-                                        <li><a href="">Materiais</a></li>
+                                        <li><a href="../materiais-apoio/L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o%20V%C3%ADdeo%20Aula%202.pdf" download>Materiais</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -146,7 +154,7 @@
                                     <label class="label-header" for="mc-02"><a href="mc-aula02.html">Vídeo Aula 2</a></label>
                                     <ul>
                                         <li><a href="../questoes/questionarioMC/qMC06.html">Questionário</a></li>
-                                        <li><a href="../materiais-apoio/Metodologia_Cient%C3%ADfica_-_Aula_2.pdf">Materiais</a></li>
+                                        <li><a href="../materiais-apoio/Metodologia_Cient%C3%ADfica_-_Aula_2.pdf" download>Materiais</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -162,7 +170,7 @@
                                     <label class="label-header" for="ii-01"><a href="ii-aula01.html">Vídeo Aula 1</a></label>
                                     <ul>
                                         <li><a href="../questoes/questionarioII/qII01.html">Questionário</a></li>
-                                        <li><a href="../materiais-apoio/Ingl%C3%AAs%20Instrumental%20I.pdf">Materiais</a></li>
+                                        <li><a href="../materiais-apoio/Ingl%C3%AAs%20Instrumental%20I.pdf" download>Materiais</a></li>
 
                                     </ul>
                                 </li>
@@ -189,7 +197,7 @@
                         <div class="linha col-mb-12 col-md-12 col-lg-12">
                             <div class="col-mb-11 col-md-11 col-lg-11"><br></div>
                             <div class="col-mb-1 col-md-1 col-lg-1">
-                                <p><a href="" class="sair" title="Sair"></a></p>
+                                <p><a href="../index.html" onclick="exit()" class="sair" title="Sair"></a></p>
                             </div>
                         </div>
                         <div class="linha col-mb-12 col-md-12 col-lg-12">
