@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <title>Login</title>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container col-10 col-xl-4">
         <div class="form-container">
             <h2>LOGIN</h2>
 
             <div class="input-group">
-                <input type="text" class="inputText" required/>
-                <span class="floating-label block">Email</span>
+                <input type="text" class="inputText col-8" required/>
+                <span class="floating-label">Email</span>
             </div>
 
             <div class="input-group">
-                <input type="password" class="inputText" required />
-                <span class="floating-label block">Senha</span>
+                <input type="password" class="inputText col-8" required />
+                <span class="floating-label">Senha</span>
             </div>
 
-
-            <div class="block button-group">
-                <button id="loginButton" class="form-group-button" type="submit">ENTRAR</button>
-            </div>
-
-            <div class="block button-group">
+            <div class="button-group col-xl-8">
                 <a href="">Esqueci minha senha</a>
             </div>
 
+            
+            <div class="button-group col-xl-8">
+                <button id="loginButton" class="form-group-button col-6" type="submit">ENTRAR</button>
+            </div>
+
+            
 
         </div>
     </div>

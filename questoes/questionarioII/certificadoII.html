@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function lerNome() {
+      nomeCursista = localStorage.getItem("nome")
+      document.getElementById("nomeCursista").innerHTML = nomeCursista
+    }
+  </script>
+  <style>
+    p {
+      position: absolute;
+      top:520px;
+      left:355px;
+      font-size: 50px;
+      width: 740px;
+      text-align: center;
+      
+    }
+  </style>
+</head>
+<body onload="lerNome()">
+  <img src="../certificados/certificadoII.png" width="1441px" height="1077px">
+  <p id="nomeCursista"></p>  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
