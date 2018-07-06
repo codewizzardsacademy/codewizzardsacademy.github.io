@@ -48,7 +48,7 @@ button:focus {
 
 }
 
-#formFaleConosco input[type="submit"],   #formFaleConosco input[type="button"]{
+#formFaleConosco input[type="reset"],   #formFaleConosco input[type="button"]{
     background: #2980b9;
     background-image: -webkit-linear-gradient(top, #2980b9, #365570);
     background-image: -moz-linear-gradient(top, #2980b9, #365570);

@@ -6,6 +6,18 @@
     <title>Code Wizzards</title>
     <link rel="stylesheet" href="code_wizzards.css">
     <link rel="stylesheet" href="css/fale_conosco.css">
+
+    <script>
+        function enviarEmail() {
+            var nome = document.getElementById('nome').value;
+            var assunto = document.getElementById('assunto').value;
+            var telefone = document.getElementById('telefone').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('mensagem').value;
+            window.location.href = 'mailto:patrickfreitasf@gmail.com?subject=' + assunto + '&body=Nome: ' + nome + ' Telefone: ' + telefone + ' Email: ' + email + ' Mensagem: ' + mensagem;
+            alert('Envio de email providenciado.');
+        }
+    </script>
 </head>
 
 <body>
@@ -50,8 +62,8 @@
                                 <input type="text" id="email" placeholder="Digite seu email">
                                 <label> Mensagem </label> <br>
                                 <textarea id="mensagem" value=" " placeholder="Digite sua mensagem"></textarea>
-                                <input type="submit" />                                
-                                <input type="button" value="Limpar"/>
+                                <input type="button" value="Enviar" onclick="enviarEmail()" />                                
+                                <input type="reset" value="Limpar"/>
                             </form>
                         </div>
                     </div>
