@@ -406,12 +406,12 @@ article {
 /*Cofiguração do rodapé*/
 
 footer {
-    margin: 10px auto;
-    padding-top: 5px;
+    margin: 30px auto 10px auto;
+    padding: 10px 0px;
     vertical-align: middle;
     width: 100%;
-    border-top: 1px solid lightgray;
-    border-bottom: 30px solid #365570;
+    border-top: 2px solid rgb(182, 182, 182);
+    border-bottom: 5px solid #365570;
 }
 
 .footerContent {
